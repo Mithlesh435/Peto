@@ -1,12 +1,13 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconly/iconly.dart';
 import 'package:peto/dashboard/favorites.dart';
-import 'package:peto/dashboard/home.dart';
-import 'package:peto/dashboard/pets.dart';
+import 'package:peto/dashboard/foster/foster.dart';
+import 'package:peto/dashboard/home/home.dart';
+import 'package:peto/dashboard/pets/pets.dart';
 import 'package:peto/dashboard/profile/profile.dart';
-
-import 'dashboard/chat.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -16,15 +17,21 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-
   int _index = 0;
   final screens = [
     const Home(),
     const Favorites(),
-    const Chat(),
+    const Foster(),
     const Pets(),
+    //const Location(),
     const Profile(),
   ];
+
+  void updateIndex(int newIndex) {
+    setState(() {
+      _index = newIndex;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +42,8 @@ class _DashboardState extends State<Dashboard> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
           child: GNav(
-            tabActiveBorder: Border.all(color: const Color.fromRGBO(154, 105, 247, 1), width: 1),
+            tabActiveBorder: Border.all(
+                color: const Color.fromRGBO(154, 105, 247, 1), width: 1),
             backgroundColor: Colors.white,
             color: Colors.grey[400],
             activeColor: const Color.fromRGBO(154, 105, 247, 1),
@@ -43,8 +51,8 @@ class _DashboardState extends State<Dashboard> {
             padding: const EdgeInsets.all(15.0),
             gap: 10,
             selectedIndex: _index,
-            onTabChange: (value){
-               setState(() {
+            onTabChange: (value) {
+              setState(() {
                 _index = value;
               });
             },
@@ -53,19 +61,20 @@ class _DashboardState extends State<Dashboard> {
                 icon: IconlyLight.home,
                 text: 'Home',
               ),
-               GButton(
+              GButton(
                 icon: IconlyLight.heart,
                 text: 'Favorites',
               ),
-               GButton(
-                icon: IconlyLight.chat,
-                text: 'Chat',
+              GButton(
+                icon: IconlyLight.game,
+                text: 'Foster',
               ),
               GButton(
                 icon: IconlyLight.document,
                 text: 'Pets',
               ),
-               GButton(
+              
+              GButton(
                 icon: IconlyLight.user,
                 text: 'Profile',
               ),
@@ -73,7 +82,6 @@ class _DashboardState extends State<Dashboard> {
           ),
         ),
       ),
-      
     );
   }
 }

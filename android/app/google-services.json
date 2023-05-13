@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "790095010130",
-    "project_id": "peto-28405",
-    "storage_bucket": "peto-28405.appspot.com"
+    "project_number": "228586173041",
+    "project_id": "peto-2547e",
+    "storage_bucket": "peto-2547e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:790095010130:android:5e1d836d677f0bdf99828b",
+        "mobilesdk_app_id": "1:228586173041:android:87c32d8f50a7999f3061d0",
         "android_client_info": {
           "package_name": "com.example.peto"
         }
       },
       "oauth_client": [
         {
-          "client_id": "790095010130-74ogstj5tufvhjk3k03j66hhtpntlae4.apps.googleusercontent.com",
+          "client_id": "228586173041-bsvk5c83p73hv4qnrh7rle3eqqk4pvfb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAjn-lLwI50_xpi8mCK9Bz1DFFeeC2iJWg"
+          "current_key": "AIzaSyCnD8epuWmg2TrY5YoAbSbhmT8IW0IyQtM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "790095010130-74ogstj5tufvhjk3k03j66hhtpntlae4.apps.googleusercontent.com",
+              "client_id": "228586173041-bsvk5c83p73hv4qnrh7rle3eqqk4pvfb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

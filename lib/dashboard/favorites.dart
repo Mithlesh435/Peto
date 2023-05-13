@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Favorites extends StatefulWidget {
   const Favorites({super.key});
 

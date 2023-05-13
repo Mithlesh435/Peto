@@ -42,6 +42,16 @@ dependencies:
   lottie: ^2.3.0
   google_nav_bar: ^5.0.6
   iconly: ^1.0.1
+  codicon: ^1.0.0
+  firebase_storage: ^11.1.2
+  image_picker: ^0.8.7+4
+  equatable: ^2.0.5
+  flutter_map: ^4.0.0
+  location: ^4.4.0
+  geolocator: ^9.0.2
+  latlong2: ^0.8.1
+  provider: ^6.0.5
+
   
 
 dev_dependencies:
@@ -82,6 +92,7 @@ flutter:
     - assets/county.json
     - assets/state.json
     - assets/city.json
+    - assets/pets/pet1.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
